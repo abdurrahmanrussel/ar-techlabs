@@ -14,8 +14,8 @@ export default function ServicesGrid() {
       viewport={{ once: true }}
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-24"
     >
-      {services.map((service) => (
-        <ServiceCard key={service.id} {...service} />
+      {services.map((service, i) => (
+        <ServiceCard key={service.id} {...service} index={i} />
       ))}
     </motion.div>
   )
