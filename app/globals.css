@@ -109,4 +109,44 @@
   .animate-grid-fade {
     animation: gridFade 8s ease-in-out infinite alternate;
   }
+
+  /* Premium card with gradient top accent on hover */
+  .card-premium {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-premium::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(59,130,246,0), rgba(139,92,246,0));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: background 0.3s ease;
+    pointer-events: none;
+  }
+
+  .card-premium:hover::before {
+    background: linear-gradient(135deg, rgba(59,130,246,0.4), rgba(139,92,246,0.4));
+  }
+
+  /* Glow shadow utilities */
+  .glow-blue {
+    box-shadow: 0 0 24px rgba(59, 130, 246, 0.15), 0 0 8px rgba(59, 130, 246, 0.08);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 24px rgba(139, 92, 246, 0.15), 0 0 8px rgba(139, 92, 246, 0.08);
+  }
+
+  /* Smooth focus ring */
+  .focus-ring:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
 }

@@ -18,7 +18,7 @@ const contactInfo = [
 export default function ContactPage() {
   return (
     <div className="pt-24 pb-32">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         {/* Header */}
         <AnimatedSection className="max-w-xl mb-16">
           <span className="text-xs font-mono tracking-[0.3em] uppercase text-blue-400 block mb-4">
@@ -33,10 +33,10 @@ export default function ContactPage() {
           </p>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12">
           {/* Form — 3 cols */}
           <AnimatedSection className="md:col-span-3" direction="left">
-            <div className="bg-navy-800 border border-navy-700 rounded-2xl p-8">
+            <div className="bg-navy-800 border border-navy-700 rounded-2xl p-6 sm:p-8">
               <ContactForm />
             </div>
           </AnimatedSection>

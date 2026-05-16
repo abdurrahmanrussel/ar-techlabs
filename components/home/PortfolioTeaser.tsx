@@ -10,8 +10,8 @@ export default function PortfolioTeaser() {
   const teaser = projects.slice(0, 3)
 
   return (
-    <section className="py-24 bg-navy-900 relative">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-16 sm:py-24 bg-navy-900 relative">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           label="Recent Work"
           title="Live"
@@ -24,11 +24,11 @@ export default function PortfolioTeaser() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-80px' }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-10"
         >
           {teaser.map((project) => (
             <AnimatedSection key={project.id} direction="up">
-              <div className="h-full bg-navy-800 border border-navy-700 rounded-xl p-6 hover:border-purple-500/30 transition-colors group flex flex-col">
+              <div className="h-full bg-navy-800 border border-navy-700 rounded-xl p-5 sm:p-6 hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/5 hover:-translate-y-0.5 transition-all duration-300 group flex flex-col card-premium">
                 <h3 className="text-base font-bold text-slate-100 mb-2 group-hover:text-purple-400 transition-colors">
                   {project.title}
                 </h3>

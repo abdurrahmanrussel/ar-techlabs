@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <div className="pt-24 pb-32">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="py-16 max-w-2xl">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-12 sm:py-16 max-w-2xl">
           <SectionHeader
             label="What We Offer"
             title="Services Built for"
@@ -24,7 +24,7 @@ export default function ServicesPage() {
 
         <ServicesGrid />
 
-        <AnimatedSection className="bg-gradient-to-r from-blue-500/10 to-purple-600/10 border border-blue-500/20 rounded-2xl p-10 text-center">
+        <AnimatedSection className="bg-linear-to-r from-blue-500/10 to-purple-600/10 border border-blue-500/20 rounded-2xl p-7 sm:p-10 text-center">
           <h3 className="text-2xl font-black text-slate-100 mb-3">
             Ready to build something?
           </h3>
@@ -33,7 +33,7 @@ export default function ServicesPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex px-6 py-3 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
+            className="inline-flex px-6 py-3 rounded-lg bg-linear-to-r from-blue-500 to-purple-600 text-white font-semibold text-sm hover:opacity-90 transition-opacity shadow-lg shadow-blue-500/20"
           >
             Start a Project →
           </Link>

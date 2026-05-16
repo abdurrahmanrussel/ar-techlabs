@@ -18,12 +18,13 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-navy-700 bg-navy-950">
-      <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 mb-10">
+
           {/* Brand */}
-          <div className="space-y-3">
+          <div className="col-span-2 md:col-span-1 space-y-3">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xs font-black">
+              <div className="w-8 h-8 rounded bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xs font-black">
                 AR
               </div>
               <span className="font-bold text-slate-100">
@@ -78,7 +79,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-navy-700 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="border-t border-navy-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-slate-600 text-xs">
             © {new Date().getFullYear()} AR TechLabs. All rights reserved.
           </p>

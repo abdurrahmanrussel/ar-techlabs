@@ -3,7 +3,7 @@ import { contact } from '@/lib/data'
 
 export default function Bio() {
   return (
-    <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+    <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start mb-20 sm:mb-24">
       {/* Text */}
       <div>
         <div className="text-xs font-mono tracking-[0.3em] uppercase text-blue-400 mb-4">
@@ -56,7 +56,7 @@ export default function Bio() {
 
       {/* Info card */}
       <AnimatedSection direction="left" delay={0.2}>
-        <div className="bg-navy-800 border border-navy-700 rounded-2xl p-8 space-y-5">
+        <div className="bg-navy-800 border border-navy-700 rounded-2xl p-6 sm:p-8 space-y-5">
           {[
             { label: 'Role', value: 'Full-Stack Engineer & AI Architect', href: undefined },
             { label: 'Location', value: 'Bangladesh 🇧🇩', href: undefined },

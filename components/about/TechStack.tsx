@@ -20,11 +20,11 @@ export default function TechStack() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"
       >
         {Object.entries(techStack).map(([category, techs]) => (
           <AnimatedSection key={category} direction="up">
-            <div className="bg-navy-800 border border-navy-700 rounded-xl p-6 h-full">
+            <div className="bg-navy-800 border border-navy-700 rounded-xl p-5 sm:p-6 h-full hover:border-blue-500/20 transition-colors">
               <h4 className="text-xs font-mono tracking-[0.2em] uppercase text-blue-400 mb-4">
                 {category}
               </h4>

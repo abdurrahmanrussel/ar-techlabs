@@ -24,7 +24,7 @@ export default function SectionHeader({
           {label}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl font-black text-slate-100 leading-tight">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-100 leading-tight">
         {title}{' '}
         {gradientTitle && (
           <span className="gradient-text">{gradientTitle}</span>

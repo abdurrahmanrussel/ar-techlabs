@@ -35,9 +35,9 @@ export default function Navbar() {
           : 'bg-transparent'
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xs font-black">
+          <div className="w-8 h-8 rounded bg-linear-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xs font-black">
             AR
           </div>
           <span className="font-bold text-slate-100 tracking-tight">
@@ -71,7 +71,7 @@ export default function Navbar() {
 
         <Link
           href="/contact"
-          className="hidden md:flex items-center gap-2 px-4 py-2 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-semibold hover:opacity-90 transition-opacity"
+          className="hidden md:flex items-center gap-2 px-4 py-2 rounded-md bg-linear-to-r from-blue-500 to-purple-600 text-white text-sm font-semibold hover:opacity-90 transition-opacity"
         >
           Start a Project
         </Link>
@@ -118,7 +118,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
-                className="block px-4 py-2.5 rounded-md bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-semibold text-center"
+                className="block px-4 py-2.5 rounded-md bg-linear-to-r from-blue-500 to-purple-600 text-white text-sm font-semibold text-center"
               >
                 Start a Project
               </Link>
