@@ -7,6 +7,15 @@ export type ContactState = {
   message: string
 }
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#x27;')
+}
+
 export async function sendContactEmail(
   prevState: ContactState,
   formData: FormData
@@ -36,10 +45,10 @@ export async function sendContactEmail(
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;background:#0a0f1e;color:#f1f5f9;padding:32px;border-radius:8px;">
           <h2 style="color:#3b82f6;margin-top:0">New Contact from AR TechLabs</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> <a href="mailto:${email}" style="color:#3b82f6">${email}</a></p>
+          <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+          <p><strong>Email:</strong> <a href="mailto:${escapeHtml(email)}" style="color:#3b82f6">${escapeHtml(email)}</a></p>
           <hr style="border-color:#1e2a4a;margin:24px 0"/>
-          <p style="white-space:pre-wrap">${message}</p>
+          <p style="white-space:pre-wrap">${escapeHtml(message)}</p>
         </div>
       `,
     })
