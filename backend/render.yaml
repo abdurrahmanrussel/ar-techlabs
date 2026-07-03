@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: ar-techlabs-bot
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:app --bind 0.0.0.0:$PORT --timeout 120
+    plan: free
+    envVars:
+      - key: APP_ID
+        sync: false
+      - key: APP_SECRET
+        sync: false
+      - key: PAGE_ACCESS_TOKEN
+        sync: false
+      - key: PAGE_ID
+        sync: false
+      - key: VERIFY_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_API_KEY2
+        sync: false
+      - key: GROQ_API_KEY3
+        sync: false
+      - key: GROQ_API_KEY4
+        sync: false
+      - key: GROQ_API_KEY5
+        sync: false
+      - key: GOOGLE_SCRIPT_URL
+        sync: false
