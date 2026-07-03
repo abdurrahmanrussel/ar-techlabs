@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import ServicesGrid from '@/components/services/ServicesGrid'
+import PricingTiers from '@/components/services/PricingTiers'
 import SectionHeader from '@/components/ui/SectionHeader'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 export const metadata: Metadata = {
   title: 'Services',
-  description: 'Full-stack SaaS development, AI agent systems, automation workflows, API development, cloud deployment, and LLM integration.',
+  description: 'Facebook page automation, full-stack SaaS development, AI agent systems, automation workflows, API development, cloud deployment, and LLM integration.',
 }
 
 export default function ServicesPage() {
@@ -23,6 +24,8 @@ export default function ServicesPage() {
         </div>
 
         <ServicesGrid />
+
+        <PricingTiers />
 
         <AnimatedSection className="bg-linear-to-r from-blue-500/10 to-purple-600/10 border border-blue-500/20 rounded-2xl p-7 sm:p-10 text-center">
           <h3 className="text-2xl font-black text-slate-100 mb-3">

@@ -83,9 +83,14 @@ export default function Footer() {
           <p className="text-slate-600 text-xs">
             © {new Date().getFullYear()} AR TechLabs. All rights reserved.
           </p>
-          <p className="text-slate-600 text-xs font-mono">
-            Built with Next.js · Deployed on Vercel
-          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="text-slate-600 text-xs hover:text-slate-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-slate-600 text-xs hover:text-slate-400 transition-colors">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Layers, BrainCircuit, Workflow, Plug, Cloud, Cpu, LucideIcon } from 'lucide-react'
+import { Layers, BrainCircuit, Workflow, Plug, Cloud, Cpu, MessageCircle, LucideIcon } from 'lucide-react'
 import AnimatedSection from '@/components/ui/AnimatedSection'
 
 const iconMap: Record<string, LucideIcon> = {
@@ -10,6 +10,7 @@ const iconMap: Record<string, LucideIcon> = {
   Plug,
   Cloud,
   Cpu,
+  MessageCircle,
 }
 
 interface ServiceCardProps {

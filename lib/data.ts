@@ -1,5 +1,12 @@
 export const services = [
   {
+    id: 'fb-automation',
+    iconName: 'MessageCircle',
+    title: 'Facebook Page Automation',
+    description: 'AI auto-reply on comments and Messenger inbox, plus scheduled AI-written posts — every day, without you lifting a finger.',
+    tags: ['Auto-Reply', 'Daily AI Posts', 'Facebook Graph API', 'Groq AI'],
+  },
+  {
     id: 'fullstack-saas',
     iconName: 'Layers',
     title: 'Full-Stack SaaS Development',
@@ -100,8 +107,57 @@ export const techStack = {
 
 export const stats = [
   { value: 6, label: 'Live Projects' },
-  { value: 6, label: 'Services' },
+  { value: 7, label: 'Services' },
   { value: 3, label: 'Years Exp', suffix: '+' },
+]
+
+export const automationPricing = [
+  {
+    id: 'starter',
+    name: 'Starter',
+    tagline: 'For small Facebook pages',
+    setupFee: '৳5,000',
+    monthlyFee: '৳500',
+    monthlyLabel: '/month service charge',
+    features: [
+      'AI auto-reply on post comments',
+      'AI auto-reply on Messenger inbox',
+      'Scheduled AI-written daily posts',
+      'Images posted from your Google Drive',
+      'Free/low-cost AI tools — no hidden charges',
+    ],
+    highlighted: false,
+  },
+  {
+    id: 'growth',
+    name: 'Growth',
+    tagline: 'Automation + your own website',
+    setupFee: '৳8,000',
+    monthlyFee: '৳500',
+    monthlyLabel: '/month service charge',
+    features: [
+      'Everything in Starter',
+      'Simple business website, hosted on Vercel',
+      'Mobile-friendly, fast, SEO-ready',
+      'Free/low-cost AI tools — no hidden charges',
+    ],
+    highlighted: true,
+  },
+  {
+    id: 'enterprise',
+    name: 'Enterprise',
+    tagline: 'Multi-page or high-volume brands',
+    setupFee: 'Custom',
+    monthlyFee: 'Custom',
+    monthlyLabel: 'let’s discuss your needs',
+    features: [
+      'Multiple pages / multi-agent workflows',
+      'Custom AI models & integrations',
+      'Dedicated support & SLAs',
+      'Tailored pricing — no fixed package',
+    ],
+    highlighted: false,
+  },
 ]
 
 export const contact = {
